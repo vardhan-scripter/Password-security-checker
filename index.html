@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="icon/png" href="logo.png">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>password security checker...</title>
+</head>
+<body class="container" id="body" ng-app="best" ng-controller="controller" style="background: {{password.colorchanger}};">
+	<div class="instruction-div">
+		<p class="instruction">Small Angular App - Password Checking Algorithm Logic Created(Assumption) By Me.</p>
+	</div>
+	<div>
+		<h1 class="heading">Password security checker</h1>
+	</div>
+	<div>
+		<input id="val" type="password" ng-model="password.user" placeholder="please enter your password here" class="password">
+	</div>
+	<div>
+		<h1 id="h1" class="password-instructor">{{password.fullname()}}</h1>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
